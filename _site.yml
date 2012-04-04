@@ -1,11 +1,11 @@
 title : Jade's Blog
 tagline: Oh Boy!
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Jade Dominguez
+  email : plusjade@gmail.com
+  github : plusjade
+  twitter : plusjade
+  feedburner : false
 
 navigation :
   - archive.html
