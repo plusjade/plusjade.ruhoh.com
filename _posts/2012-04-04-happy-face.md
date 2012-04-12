@@ -10,7 +10,7 @@ layout: post
 ## http://plusjade.ruhoh.com works!
 
 
-<img src="{{MEDIA_PATH}}/first-post.jpg" style="width:320px; height:213px; display:block; padding:2px; border:2px solid #046D8B; border-radius:2px; margin:10px 0;" alt="this is where the magic happens"/>
+<img src="{{paths.media}}/first-post.jpg" style="width:320px; height:213px; display:block; padding:2px; border:2px solid #046D8B; border-radius:2px; margin:10px 0;" alt="this is where the magic happens"/>
 
 Can you believe it? I'm pretty amazed by this. 
 
