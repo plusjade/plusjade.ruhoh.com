@@ -1,7 +1,7 @@
 ---
 version : 0.0.3
 permalink: /:categories/:title
-theme : twitter
+theme : vignelli
 
 production_url : http://sample.com
 
