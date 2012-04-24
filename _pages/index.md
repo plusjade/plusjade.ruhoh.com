@@ -1,5 +1,5 @@
 ---
-title : About
+title : MVP
 description:
 
 layout : page

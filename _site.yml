@@ -9,8 +9,8 @@ author :
 
 navigation :
   - archive.html
-  - tags.html
-  - categories.html
-  - pages.html
-  - about.md
+#  - tags.html
+#  - categories.html
+#  - pages.html
+#  - about.md
   
