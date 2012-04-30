@@ -3,10 +3,11 @@ version : 0.0.3
 permalink: /:categories/:title
 theme : vignelli
 
+base_path : '~meep'
 production_url : http://sample.com
 
 comments :
-  provider : disqus
+  provider : false
   disqus :
     short_name : jekyllbootstrap
   livefyre :
