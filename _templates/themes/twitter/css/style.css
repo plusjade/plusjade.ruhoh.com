@@ -66,3 +66,24 @@ html, body {
   border:1px solid #4C964D;
   color:#FFF;
 }
+
+.layout-post h1, .layout-post h2, .layout-post h3, .layout-post h4 {
+  margin-bottom:10px;
+  padding-top:10px;
+  font-family:arial;
+}
+
+.layout-post h1 {
+  border-top:1px solid #aaa;
+  font-size:26px;
+}
+.layout-post h2 { font-size:22px}
+.layout-post h3 {font-size:18px}
+.layout-post h4 {font-size:14px}
+
+body, p, li {
+ ont-family:courier; 
+ font-family:verdana;
+ font-size:14px;
+ line-height:1.5em;
+}

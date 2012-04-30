@@ -12,7 +12,7 @@
      <div id="outer_wrapper">
        <div id="wrapper">
          <div id="header">
-           <h1 id="branding"><a href="/">Meep</a></h1>
+           <h1 id="branding"><a href="{{ paths.base }}">Meep</a></h1>
            <ul id="nav" class="navigation">
             {{#site.navigation?to_pages }}
              <li><a href="{{url}}">{{title}}</a></li>
@@ -40,35 +40,6 @@
          </div>
 
          <div id="sidebar">
-
-           <div class="blog_nav">
-             <div class="prev_next">
-              {{# page?previous }}
-               <a rel="prev" href="{{url}}">« Prev</a>
-              {{/ page?previous }} 
-              {{# page?next }}
-                <a rel="prev" href="{{url}}">Next »</a>
-              {{/ page?next }}
-             </div>
-             	        
-<!--
-           <form role="search" method="get" id="searchform" action="/search">
-             <div class="field fld_name required input">
-               <input type="text" name="q" value=""/>
-               <button id="searchsubmit" type="submit">Search</button>
-             </div>
-           </form>
-
-           <h3>Elsewhere</h3>
-           <ul class="social_links">
-
-           </ul>
--->
-           
-           <!-- Please do not remove the line below -->
-           <p class="credits"><a href="http://www.robbiemanson.com/resources/vignelli-minimal-tumblr-theme/">Vignelli</a> theme by Robbie Manson</a></p>
-
-           </div>
 
          </div>
 
