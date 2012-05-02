@@ -1,7 +1,7 @@
 ---
 version : 0.0.3
 permalink: /:categories/:title
-theme : vignelli
+theme : fluid
 
 base_path : '~meep'
 production_url : http://sample.com
