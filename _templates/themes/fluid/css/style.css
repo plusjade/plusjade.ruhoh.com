@@ -1,40 +1,36 @@
 body, p, li {
   font: normal 14px/1.57em "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Arial,Helvetica,sans-serif;  
+  color:#555;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
 }
-.layout-post h1, .layout-post h2, .layout-post h3, .layout-post h4 {
+.layout-page h1, .layout-page h2, .layout-page h3, .layout-page h4 {
   margin-bottom:10px;
   padding-top:10px;
 }
-.layout-post h2 {font-size:22px}
-.layout-post h3 {font-size:18px}
-.layout-post h4 {font-size:14px}
+.layout-page h2 {font-size:22px}
+.layout-page h3 {font-size:18px}
+.layout-page h4 {font-size:14px}
 
-.layout-post h1 { 
+.layout-page h1 { 
   margin:20px -20px;
-  font-size:24px; 
-  padding:6px 18px;
-  background:#EDE574; 
-  color:#6D6A34;
-  border-radius:3px; 
+  color:#AB3E5B;
+  border-top:1px solid #B3CC57;
 }
-.layout-post h2 {
+.layout-page h2 {
   margin:10px 0 ;
-  padding-top: 0;
-  padding-left:10px;
-  margin-left:-10px;
-  border-left:3px solid orange;
 }
 
-.layout-post, .layout-post p, .layout-post li {
+.layout-page, .layout-page p, .layout-page li {
   font-size:16px; 
 }
 .inner {
-  padding:0 20px;
+  padding:0 40px;
 }
-
+#right-pane {
+  text-align:right;
+}
 /* tag_box ======================================================== */
 
 .tag_box {

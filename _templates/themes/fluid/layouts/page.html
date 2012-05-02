@@ -1,13 +1,25 @@
 ---
 layout : default
 ---
-
 <div class="page-header">
   <h1>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h1>
 </div>
 
-<div class="row">
-  <div class="span12">
-    {{ content }}
+<div class="row-fluid">
+  
+  <div id="left-pane" class="span3">
+    <div id="toc"></div>
+  </div>  
+
+  <div id="novel" class="span6 layout-{{page.layout}}">
+    <div class="inner">
+      {{ content }}
+    </div>
   </div>
+  
+  <div id="right-pane" class="span3">
+    <h4>Published</h4>
+    <div class="date"><span>{{ page.date }}</span></div>
+  </div>
+  
 </div>

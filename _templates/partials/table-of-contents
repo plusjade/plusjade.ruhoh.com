@@ -50,7 +50,7 @@
 #toc { position:fixed;}
 #toc ul { margin:0; }
 #toc ul li { list-style:none;  line-height:1.8em}
-#toc ul li strong { padding:2px 6px; border:1px solid #ccc; background:#eee; color:#333 }
+#toc ul li strong { padding:2px 6px;  background:#eee; border-radius:2px }
 #toc ul li.sub {
   margin-left:10px;
   
