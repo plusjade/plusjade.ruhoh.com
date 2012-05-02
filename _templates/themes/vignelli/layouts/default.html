@@ -17,8 +17,6 @@
             {{#site.navigation?to_pages }}
              <li><a href="{{url}}">{{title}}</a></li>
             {{/site.navigation?to_pages }}
-            <!--<li><a href="http://apsurd.tumblr.com/rss">RSS</a></li>
-            -->
            </ul>
 
            <ul id="pages" class="navigation">
@@ -26,7 +24,7 @@
            </ul>
 
            <div class="about">
-             <p></p>
+             <p>meep meep</p>
            </div>
          </div>
 
@@ -39,7 +37,27 @@
           {{ content }}
          </div>
 
-         <div id="sidebar">
+         <div id="sidebar" style="text-align:right">
+           <ul class="tags">
+           {{#page.tags?to_tags}}
+             {{>tags_list}}
+           {{/page.tags?to_tags}}
+           </ul>
+           
+           <div class="blog_nav">
+             <div class="prev_next">
+              {{# page?previous }}
+               <a rel="prev" href="{{url}}">« Prev</a>
+              {{/ page?previous }} 
+              {{# page?next }}
+                <a rel="prev" href="{{url}}">Next »</a>
+              {{/ page?next }}
+             </div>
+           </div> 
+           <p class="credits">
+             <a href="http://www.robbiemanson.com/resources/vignelli-minimal-tumblr-theme/">Vignelli</a> theme
+             <br> by Robbie Manson</a>
+          </p>
          </div>
 
        </div>
@@ -48,73 +66,8 @@
 
      </div>
   
-  <div id="toc"></div>
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>
-    // Table Of Contents
-    var Toc = {
-      $container : null,
-      $wrapper : null,
-
-      init : function(container, wrapper){
-        Toc.$container = $(container);
-        Toc.$wrapper = $(wrapper);
-
-        Toc.build();
-        Toc.toggle();
-        $(window).resize(function(){ Toc.toggle() })
-      },
-
-      build : function(){
-        var h1 = [];
-        var h2 = [];
-
-        Toc.$wrapper.find("h1").each(function(){
-          var h = {h1 : this, children : null }
-          h.children = $(this).nextUntil("h1", "h2");
-          h1.push(h);
-        })
-        var cache = "<ul class='nest'>";
-        h1.forEach(function(node){
-          cache += '<li><strong><a href="#'+ node.h1.id + '">'+$(node.h1).text()+'</a></strong></li>';
-
-          node.children.each(function(){
-            cache += '<li class="sub"><a href="#'+ this.id + '">'+ $(this).text() + '</a></li>';
-          })
-        })
-        cache += "</ul>";
-
-        Toc.$container.append(cache);
-      },
-
-      toggle :function(){
-        if($(window).width() > 1000) Toc.$container.show();
-        else Toc.$container.hide();
-      }
-    }
-    
-    
-    Toc.init('#toc', '.post_content');
-    
-  </script>
-<style type="text/css">
-  #toc {
-    position:fixed;
-    top:10px;
-    background:#FFF;
-    padding:5px;
-  }
-  #toc ul { margin:0; line-height:1.9em }
-  #toc ul li { list-style:none;  }
-  #toc ul li strong { padding:2px 6px; border:1px solid #ccc; background:#eee; color:#333 }
-  #toc ul li.sub {
-    margin-left:10px;
-    
-  }
-  #toc ul li a { color:#555; }
-</style>
-
+     
+  {{{ table-of-contents }}}
   {{{ _syntax }}}
   {{{ _analytics }}}
   </body>
