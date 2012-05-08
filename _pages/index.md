@@ -53,8 +53,7 @@ But first let's make sure we understand what the Internet is...
 In a nutshell the Web, or Internet, is a network of computers. 
 Any computer can be connected directly or indirectly to the Internet. 
 
-The computers connected to the Internet can make certain content publicly accessible to other computers in the network (the Internet).
-They can also receive content that other computer's make available.
+All computers connected to the Internet can make certain content publicly accessible to other computers in the network (the Internet). They can also receive content that other computer's make available.
 
 A **Server** is a computer that has been tuned to serve content on the Internet in an efficient manner.
 Servers use the same basic hardware as any normal computer including your laptop, the difference lies mainly in the configuration.
@@ -66,10 +65,10 @@ For what it's worth you can technically serve a website to the entire planet usi
 For the purpose of this book we will cover how the web works relative to consumers of web applications.
 That is to say if I make a web application, how does the web enable my users to consume my product?
 
+When we think about how a user uses a web application we can define two sides to this interaction:
 
-Remember the Internet is a network of computers. All computers in the network can send and receive information.
-**Servers** send content to your customers, the end users.
-End-users interact with your content through an interface called the **Client**.
+- **Server** is the side that your application stores its application and data in order to send it out to the users.
+- **Client** is the side that your users interact with your application.
 
 Let's visualize this relationship:
 
@@ -89,9 +88,9 @@ Remember applications are software programs so there needs to be _somewhere_ whe
 
 Since the client is what runs your application, you'll need to program your application in such a way the target client can understand. Certain clients only understand certain types of code.
 
-A common example of an application running on a client is Microsoft Word and Photoshop. These apps must be installed on your computer so the Operating System itself (Windows, Mac) acts as the Client. That's also why there are multiple versions of the same application but built for different Operating Systems.
+A common example of an application running on a client is Microsoft Word and Photoshop. These apps must be installed on your computer so the Operating System itself (Windows, Mac) acts as the Client. That's why there are multiple versions of the same application built for different Operating Systems.
 
-When an application is built for a device's Operating System, it can be thought of as platform-specific because it can only work on that Operating System.
+When an application is built for a device's Operating System, it can be thought of as platform-specific because it can only work on that system.
 
 ### Platform Specific Applications
 
@@ -114,7 +113,7 @@ The Web Browser is actually a **native application** that comes pre-installed on
 Instead of having to build a native app for every device's Operating System, we can now build an app that works _inside_ of the Web Browser. This shifts the client from the Operating System to the
 Web Browser.
 
-All web browsers (ideally) provide a standardized programming interface framework for running applications regardless of the Operating System they are installed on.
+All web browsers (ideally) provide a standardized programming environment for running applications regardless of the Operating System they are installed on.
 
 In other words, if an application is programmed to run in the web browser, it will work _anywhere_ a web browser is installed:
 
@@ -155,12 +154,14 @@ Consider an example web application that provides driving directions from one pl
 - Draw the route on an interactive map. 
 - Provide a list of procedural directions.
 
-**No Internet Access**  
+### Our Application With No Internet Access
+
 Without the Internet, the application  would have to have all of the data available within the app itself.
 It would also only work on computers with enough computing power to process the calculations.
 Lastly it would have to be manually updated with code updates and changes to the route database.
 
-**With Internet Access**  
+### Our Application With Internet Access
+
 Using the Internet, however, the application can offload all of the data onto the Server. It can also employ much more powerful computing resources on the server for handling complex route calculations.
 
 Now the client application need only have access to the Internet, ask the question to the server, and have the server compute the answer from its own database using much more powerful computing resources.
@@ -192,7 +193,7 @@ Notice the different URLs relative to the main domain name: http://www.myapp.com
 All user-facing web applications work this way. Servers can provide an unlimited number of special endpoints 
 to the Client application by way of the URLs.  
 A user's actions via the Client are mapped to these URLs. As the Client issues the action
-it sends data to the server _at_ a specific URL which the server processes based on _what_ data was sent
+it sends data to the server at a specific URL which the server processes based on _what_ data was sent
 and _which_ URL it was sent to.
 
 
@@ -367,76 +368,60 @@ Righto! We've covered all about how web applications work, the components that p
   
 #  Hosting Web Applications
 
+Now that we've covered a numerous web application implementation strategies, I'll quickly run down the hosting options available to you.
+
 ## Shared
 
-Shared hosting is the cheapest paid hosting you can get.
-You are literally sharing one server with potentially hundreds of different websites.
+Shared hosting is the cheapest paid hosting you can get. You are literally sharing one server with potentially hundreds of different websites.
 
-One server only has so many resources so if one of those websites gets an influx of traffic
-that stalls the server, all websites will experience the same stall. If one website exposes 
-a security vulnerability all websites on the server are at risk.
-Needless to say you should probably avoid a shared server for any business related application.
+One server only has so many resources so if one of those websites gets an influx of traffic that stalls the server, all websites will experience the same stall. If one website exposes a security vulnerability all websites on the server are at risk. Needless to say you should probably avoid a shared server for any business related application.
 
 ## Virtual Private Server (VPS)
 
-A virtual private server places multiple web applications onto one physical server _but_
-they are privatized virtually, through software.
+A virtual private server places multiple web applications onto one physical server _but_ they are privatized virtually, through software.
 
-So physically you still share the same server with others, but you are free to download
-your own Operating system and any and all necessary software packages to run.
-Each virtual instance also has pre-allocated cpu and memory dedicated to _only_ that instance.
+Physically you still share the same server with others, but you are free to download your own Operating system and any and all necessary software packages to run. Each virtual instance also has pre-allocated cpu and memory dedicated to _only_ that instance.
 
-A VPS solves all the bandwidth and security issues with the traditional shared server.
+A VPS solves all the bandwidth and security issues associated with a traditional shared server.
 
-VPS offer the most bang for the buck. They are extremely inexpensive for all the power they offer.
-The one drawback is that a vps must be configured by someone who knows how to setup a web-server and all of its requisite dependencies.
+VPS offer the most bang for the buck. They are extremely inexpensive for all the power they offer. However, remember that a VPS must be configured by someone who knows how to setup a web-server and all of its requisite dependencies. Your Server infrastructure will only be as efficient and powerful as the person deploying them is capable of producing.
 
 ## Dedicated Server
 
-A dedicated server is one physical server dedicated entirely to your application.
-You are leasing the physical hardware as housed in a data-center and a free to do what you wish with it.
+A dedicated server is one physical server dedicated entirely to your application. You are leasing the physical hardware as housed in a data-center and are free to do what you wish with it.
 
-This option offers the most control over every aspect of your application stack (including the physical hardware)
-but of course it will cost more initially to setup and maintain.
+This option offers the most control over every aspect of your application stack (including the physical hardware) but of course it will cost more initially to setup and maintain.
 
 ## Cloud Servers
 
 Cloud servers can be thought of as a large army of virtual private servers.
 We know that a web application backend may be composed of many servers serving different roles.
 
-Cloud servers main benefit is that they provide _on demand_ deployment of virtual private servers to your backend cluster.
-Cloud servers can be cloned literally in minutes, booted, and then deployed live.
+Cloud servers main benefit is that they provide _on demand_ deployment of virtual private servers to your backend cluster. Cloud servers can be cloned literally in minutes, booted, and then deployed live.
 
 ## Infrastructure as a Service
 
 Cloud servers are a _type_ of infrastructure as a service. 
-That is a company is providing you with access to raw infrastructure computers: computing power, dns routing, database layer, text and email sending.
+That is a company is providing you with access to raw infrastructure computers: computing power, DNS routing, database layer, email servers, load balancers, and so forth.
 
-Iaas is very affordable but comes with a necessary caveat that you must have a 
+IAAS is very affordable but comes with a necessary caveat that you must have a 
 knowledgable engineer configure all the components together in an efficient cost effective manner.
 
 ## Platform as a Service
 
-Platforms as a Service try to solve the "knowledgable engineer" problem by completely
-removing the need for your company to worry about the Backend infrastructure entirely.
+Platforms as a Service try to solve the "knowledgable engineer" problem by completely removing the need for your company to worry about the Backend infrastructure entirely.
 
-The premise is that engineers need only build the application layer, then push it to the PAAS
-for hosting. Literally _everything_ else at this stage is taken care of.
-Load balancing, caching, dynamic generation of application server nodes, the database layer, it's all provided!
+The premise is that engineers need only build the application layer, then push it to the PAAS for hosting. Literally _everything_ else at this stage is taken care of. Load balancing, caching, dynamic generation of application server nodes, the database layer, it's all provided!
 
-This is perhaps the fastest way to get a prototype up and running.
-However PAAS is not a silver bullet. It works best when your application is already very very efficient.
-PAAS customers pay for all the computing power they use so while everything is taken care of, if your app is inefficient,
+This is perhaps the fastest way to get a prototype up and running. However PAAS is not a silver bullet. It works best when your application is already very very efficient. PAAS customers pay for all the computing power they use so while everything is taken care of, if your app is inefficient,
 your bill will climb very high very fast.
 
-As your company matures, you'll likely _require_ the control that comes with dedicated machines
-and highly skilled system administrators that are experienced in squeezing every ounce of computing power out of each and every machine.
+As your company matures, you'll likely _require_ the control that comes with dedicated machines and highly skilled system administrators that are experienced in squeezing every ounce of computing power out of each and every machine.
 
 PAAS is _unmatched_ for getting prototypes up and running and deferring complex infrastructure problems until they are really warranted,
 when you have a thousand customers knocking down your door trying to pay you money.
 
-When that time comes your best bet is to reference this book while scheduling meetings with
-experienced system administrators =)
+When that time comes your best bet is to reference this book while scheduling meetings with experienced system administrators =)
 
 
 #  Frequently Asked Questions
