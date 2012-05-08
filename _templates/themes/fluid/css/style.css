@@ -23,10 +23,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .layout-page, .layout-page p, .layout-page li {
-  font-size:16px; 
+  font-size:18px; 
 }
 .inner {
-  padding:0 40px;
+  adding:0 40px;
 }
 #right-pane {
   text-align:right;

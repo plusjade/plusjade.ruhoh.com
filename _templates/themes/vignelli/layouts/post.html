@@ -4,60 +4,13 @@ layout : default
 
 <ol class="posts">
   <li>
-
     <div id="aside">
-      <a href="#"><span class="date">8 November 2006</span></a>
-
-      <p><a href="#">7,449 notes</a></p>
-      <ul class="tags">
-      {{#page.tags?to_tags}}
-        {{>tags_list}}
-      {{/page.tags?to_tags}}
-      </ul>
-      
-                 <div class="blog_nav">
-                   <div class="prev_next">
-                    {{# page?previous }}
-                     <a rel="prev" href="{{url}}">« Prev</a>
-                    {{/ page?previous }} 
-                    {{# page?next }}
-                      <a rel="prev" href="{{url}}">Next »</a>
-                    {{/ page?next }}
-                   </div>
-
-      <!--
-                 <form role="search" method="get" id="searchform" action="/search">
-                   <div class="field fld_name required input">
-                     <input type="text" name="q" value=""/>
-                     <button id="searchsubmit" type="submit">Search</button>
-                   </div>
-                 </form>
-
-                 <h3>Elsewhere</h3>
-                 <ul class="social_links">
-
-                 </ul>
-      -->
-
-                 <!-- Please do not remove the line below -->
-                 <p class="credits">
-                   <a href="http://www.robbiemanson.com/resources/vignelli-minimal-tumblr-theme/">Vignelli</a> theme
-                   <br> by Robbie Manson</a>
-                  </p>
-
-                 </div>
-      
     </div>
 
     <div class="post_content">
-
-      
       {{ content }}
-
     </div>
-
   </li>
-
 </ol>
 
 {{{ comments }}}
