@@ -8,11 +8,11 @@ body {
    min-width:900px;
    position:relative;
 }
-
 #left-pane {
   position:fixed;
   top:0;
   width:20%;
+  min-width:180px;
   height:100%;
   overflow:auto;
   background:#F9F9F9;
@@ -31,10 +31,10 @@ body {
   top:0;
   right:0;
   width:30%;
+  min-width:270px;
   height:100%;
   border-left:1px solid #eee;
 }
-  
 footer {
   clear:both;
   padding:10px;
