@@ -15,9 +15,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
-    <link href="{{ paths.theme }}/bootstrap/css/bootstrap.min.css?v=2.03" rel="stylesheet">
-    <link href="{{ paths.theme }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ paths.theme }}/bootstrap/css/bootstrap.min.css?v=reset" rel="stylesheet">
+    <link href="{{ paths.theme }}/css/style.css?v=1" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -29,20 +28,27 @@
   </head>
 
   <body>
-
+<!--
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container" style="width:100%; padding:0 20px;">
+          <a class="brand" href="/">{{ site.title }}</a>
+        </div>
+      </div>
+    </div>
+-->    
     <div class="container-fluid">
 
-      <div class="content">
-        {{ content }}
-      </div>
+      {{ content }}
 
+<!--
       <footer>
         <p>Help from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
-
-    </div> <!-- /container -->
+-->      
+    </div>
 
     {{> table-of-contents }}
     {{{ _syntax }}}

@@ -10,8 +10,8 @@
       Toc.$wrapper = $(wrapper);
 
       Toc.build();
-      Toc.toggle();
-      $(window).resize(function(){ Toc.toggle() })
+      //Toc.toggle();
+      //$(window).resize(function(){ Toc.toggle() })
     },
 
     build : function(){
@@ -47,13 +47,17 @@
   
 </script>
 <style type="text/css">
-#toc { position:fixed;}
-#toc ul { margin:0; }
-#toc ul li { list-style:none;  line-height:1.8em}
-#toc ul li strong { padding:2px 6px;  background:#eee; border-radius:2px }
+#toc {padding:10px}
+#toc ul { margin:0; padding:0}
+#toc ul li { list-style:none;  line-height:1.9em}
+#toc ul li strong { 
+  padding:3px 8px;  background:#eee; border-radius:2px;
+  
+}
 #toc ul li.sub {
   margin-left:10px;
   
 }
-#toc ul li a { color:#555; }
+#toc ul li a { color:#555; text-decoration:none }
+#toc ul li a:hover {text-decoration:underline}
 </style>
