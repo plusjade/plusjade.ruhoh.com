@@ -1,0 +1,5 @@
+<div id="novel" class="layout-{{page.layout}}">
+  <div class="inner">
+    {{ content }}
+  </div>
+</div>

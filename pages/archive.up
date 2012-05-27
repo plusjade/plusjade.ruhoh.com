@@ -1,0 +1,10 @@
+---
+layout: page
+title : Archive
+header : Post Archive
+tagline : "hello i am jade"
+---
+
+{{# db.posts.collated }}
+  {{> posts_collate }}
+{{/ db.posts.collated }}

@@ -1,0 +1,11 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<h1>{{config.greeting }}</h1>
+<ul>
+  {{# config.people }}
+  <li>{{.}}</li>
+  {{/ config.people }}
+</ul>
+<div id="{{config.target_id}}"></div>
+<script>
+$(function(){Toc.init('#{{config.target_id}}','#{{config.wrapper_id}}') })
+</script>

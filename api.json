@@ -1,0 +1,40 @@
+{
+    "config.yml": "",
+    "media": [],
+    "pages": [],
+    "partials": [],
+    "plugins": [],
+    "posts": [],
+    "site.yml": "",
+    "themes": [
+        {
+            "THEME-NAME": {
+                "dashboard.html": "",
+                "layouts": [],
+                "media": [],
+                "partials": [],
+                "scripts": [],
+                "stylesheets": [],
+                "theme.json": "",
+                "widgets": [
+                    {
+                        "WIDGET-NAME": {
+                            "layouts": [],
+                            "stylesheets": []
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "widgets": [
+        {
+            "WIDGET-NAME": {
+                "config.yml": "",
+                "layouts": [],
+                "scripts": []
+            }
+        }
+    ],
+    "dashboard.html": ""
+}

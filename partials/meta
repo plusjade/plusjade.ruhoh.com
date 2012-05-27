@@ -1,0 +1,5 @@
+  <title>{{ page.title }}</title>
+{{# page.description }}
+  <meta name="description" content="{{ . }}">
+{{/ page.description }}
+  <meta name="author" content="{{ site.author.name }}">

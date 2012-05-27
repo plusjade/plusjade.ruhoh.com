@@ -1,0 +1,19 @@
+{
+  "stylesheets" : {
+    
+    "default" : [
+      "bootstrap.min.css",
+      "style.css"
+    ],
+
+    "page" : [
+      "example.page.css"
+    ],
+    
+    "widgets" : {
+      "google_prettify" : "desert.css",
+      "table_of_contents" : "table_of_contents.css"
+    }
+    
+  }
+}

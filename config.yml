@@ -1,0 +1,10 @@
+---
+version : 0.0.3
+theme : fluid
+permalink: /:categories/:title
+
+pages:
+  permalink: pretty
+
+base_path : '~meep'
+production_url : http://sample.com

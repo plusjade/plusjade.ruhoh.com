@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>meta}}
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {{{ assets }}}
+  <!-- script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script -->
+  </head>
+
+  <body>
+<!--
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container" style="width:100%; padding:0 20px;">
+          <a class="brand" href="/">{{ site.title }}</a>
+        </div>
+      </div>
+    </div>
+-->    
+    <div class="container-fluid">
+      {{ content }}
+    </div>
+
+    {{{ google_prettify }}}
+    {{{ analytics }}}
+  </body>
+</html>

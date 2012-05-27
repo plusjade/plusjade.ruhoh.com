@@ -1,0 +1,123 @@
+body {
+  height:100%;
+  margin:0;padding:0;
+}
+.container-fluid {
+   overflow:auto;
+   height:100%;
+   min-width:900px;
+   position:relative;
+}
+#left-pane {
+  position:fixed;
+  top:0;
+  width:20%;
+  min-width:180px;
+  height:100%;
+  overflow:auto;
+  background:#F9F9F9;
+}
+#novel {
+  position:relative;
+  top:0;
+  left:20%;
+  width:50%;
+  min-width:450px;
+  background:#FFF;
+  border-left:1px solid #eee;
+}
+#right-pane {
+  position:absolute;
+  top:0;
+  right:0;
+  width:30%;
+  min-width:270px;
+  height:100%;
+  border-left:1px solid #eee;
+}
+footer {
+  clear:both;
+  padding:10px;
+  text-align:center;
+}
+
+body, p, li {
+  font: normal 14px/1.57em "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Arial,Helvetica,sans-serif;  
+  color:#555;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+.layout-page h1, .layout-page h2, .layout-page h3, .layout-page h4 {
+  margin-bottom:10px;
+  padding-top:10px;
+}
+.layout-page h2 {font-size:22px}
+.layout-page h3 {font-size:18px}
+.layout-page h4 {font-size:14px}
+
+.layout-page h1 { 
+  margin:30px -20px;
+  color:#AB3E5B;
+}
+.layout-page h2 {
+  margin:10px 0 ;
+}
+
+.layout-page, .layout-page p, .layout-page li {
+  font-size:18px; 
+}
+.inner {
+  padding:10px 40px;
+}
+#right-pane {
+  text-align:right;
+}
+/* tag_box ======================================================== */
+
+.tag_box {
+  list-style:none;
+  margin:0;
+  padding:5px 0 ;
+  overflow:hidden;
+}
+.tag_box li {
+  line-height:28px;
+}
+.tag_box.inline li {
+  float:left;
+}
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color:#005F6B;
+  border-radius: 3px;
+  text-decoration:none;
+}
+.tag_box a span{
+  vertical-align:super;
+  font-size:0.8em;
+}
+.tag_box a.active {
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
+}
+
+
+body .navbar > .navbar-inner {
+  background:#F0F0D8; box-shadow: 0 0 0 0; border-bottom:1px solid #E0E4CC
+}
+
+
+@media (max-width: 767px) {
+  #left-pane {display:none}
+  #novel {left:0}
+  #left-pane {width:50%; min-width:auto}
+}
+@media (max-device-width: 767px) {
+  #left-pane {display:none}
+  #novel {left:0}
+  #left-pane {width:50%; min-width:auto}
+}
