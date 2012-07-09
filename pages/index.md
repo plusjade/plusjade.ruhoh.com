@@ -1,10 +1,3 @@
-````ruby
-$f'(x) \sim A_1 + e_{t_1} \sim A_2 + e_{t_2}$
-````
-
-## {{teehee }}
-
-## {{jadebeans }}
 
 # Goals
 
