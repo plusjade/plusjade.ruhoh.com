@@ -6,8 +6,8 @@ class Ruhoh
         '.up'
       end
       
-      def self.convert(page)
-        page.content.upcase
+      def self.convert(content)
+        content.upcase
       end
     end #Textile
   end #Converter
